@@ -1,0 +1,10 @@
+^D:\KIO\PUZZLE\BUILD\WINDOWS\CMAKEFILES\FECC8518CD9360B5902EE430FC120C36\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^D:\KIO\PUZZLE\BUILD\WINDOWS\CMAKEFILES\FECC8518CD9360B5902EE430FC120C36\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/KIO/puzzle/windows -BD:/KIO/puzzle/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/KIO/puzzle/build/windows/puzzle.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

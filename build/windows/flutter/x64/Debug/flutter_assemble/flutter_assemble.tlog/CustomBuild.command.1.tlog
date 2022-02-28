@@ -1,0 +1,28 @@
+^D:\KIO\PUZZLE\BUILD\WINDOWS\CMAKEFILES\8BBF33FBA69CBE89816171A9C0305C92\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\SOFTWARE\flutter PROJECT_DIR=D:\KIO\puzzle FLUTTER_ROOT=D:\SOFTWARE\flutter FLUTTER_EPHEMERAL_DIR=D:\KIO\puzzle\windows\flutter\ephemeral PROJECT_DIR=D:\KIO\puzzle FLUTTER_TARGET=D:\KIO\puzzle\lib\main.dart DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\KIO\puzzle\.dart_tool\package_config.json D:/SOFTWARE/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\KIO\PUZZLE\BUILD\WINDOWS\CMAKEFILES\DD2FE870C80EAABB4A2D2463439F9C6A\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\KIO\PUZZLE\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/KIO/puzzle/windows -BD:/KIO/puzzle/build/windows --check-stamp-file D:/KIO/puzzle/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
